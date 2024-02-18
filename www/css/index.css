@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(
+    to bottom left,
+    #ffe4e4,
+    #cfd6d7,
+    #e7eaeb,
+    #ffffff,
+    #ffbfbf
+  );
+  margin: 0;
+  height: 100%;
+  color: #133337;
+}
+
+.logo-container {
+  margin-left: 20px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  color: #4ca3dd;
+}
+
+.link-container {
+  padding: 0, 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.link-container > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #133337;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.link-container > a:hover {
+  background: #133337;
+  color: #cfd6d7;
+  transition: ease-in-out 300ms;
+}
+
+section {
+  padding: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.home-content > h1 {
+  font-size: 72px;
+  font-weight: bold;
+  color: #4ca3dd;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+.contact-options {
+  width: 50%;
+}
+
+.contact-options > a {
+  height: 100%;
+  color: #4ca3dd;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 8px;
+  font-size: 32px;
+}
+
+.contact-options > a:hover {
+  background: #4ca3dd;
+  border: 1px solid #4ca3dd;
+  color: #e7eaeb;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: ease-in-out 300ms;
+}
+
+.hero-image-carousel {
+  width: 32%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel > img {
+  width: 100%;
+  height: 600px;
+}
+
+#about {
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 54px;
+}
+
+.about-content {
+  width: 100%;
+  display: flex;
+  justify: space-between;
+}
+
+.about-content-section {
+  width: 40%;
+  margin: 4% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-content-section > h3 {
+  text-align: left;
+}
+
+.about-content-section > p {
+  margin-right: 8%;
+}
+
+.about-content-section > p > span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-content-section > img {
+  height: auto;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.stack-container {
+  display: flex;
+  font-size: 2.8rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #4ca3dd;
+  width: 100%;
+  margin: 10px;
+}
+
+ul {
+  margin: 0 8%;
+  font-size: 20px;
+}
+
+#portfolio {
+  display: block;
+}
+
+.projects {
+  width: 100%;
+  display: block;
+  margin-top: 8%;
+}
+
+.project-container {
+  display: flex;
+  margin-bottom: 8%;
+}
+
+.project-desc {
+  width: 40%;
+  margin-right: 8%;
+}
+
+.project-link {
+  width: 50%;
+}
+.project-link > img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #4ca3dd;
+}
+
+footer a {
+  font-size: 32px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 867px) {
+  .icon-desc {
+    display: none;
+  }
+
+  .link-container > a {
+    font: 32px;
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  .hero-image-carousel {
+    width: 400px;
+    margin: 4% 0;
+  }
+
+  .home-content > h1 {
+    font-size: 48px;
+  }
+
+  .home-content > p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 4%;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+  .contact > h3 {
+    text-align: left;
+  }
+  .contact-options {
+    width: 100%;
+  }
+
+  .contact-options > a {
+    padding: 12px;
+    margin: 4px;
+    font-size: 16px;
+  }
+
+  #about {
+    padding: 8%;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+  .about-content-section {
+    width: 90%;
+    margin: 8%;
+  }
+  .project-container {
+    flex-direction: column;
+  }
+  .project-desc {
+    width: 100%;
+  }
+
+  .project-link {
+    width: 100%;
+  }
+}
